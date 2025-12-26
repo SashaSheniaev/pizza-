@@ -55,10 +55,21 @@
   min-width: 0;
 }
 
+.cart-item-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.cart-item-icon {
+  font-size: 1.2rem;
+}
+
 .cart-item-name {
   font-size: 1rem;
-  margin-bottom: 0.25rem;
   color: var(--text-primary);
+  margin: 0;
 }
 
 .cart-item-price {

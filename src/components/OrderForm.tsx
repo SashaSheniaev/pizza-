@@ -96,7 +96,7 @@ function OrderForm({ total, onOrder, onClose }: OrderFormProps) {
           </div>
 
           <div className="form-total">
-            <strong>К оплате: {total}₽</strong>
+            <strong>К оплате: ${total.toFixed(2)}</strong>
           </div>
 
           <div className="form-actions">

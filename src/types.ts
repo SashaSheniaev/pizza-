@@ -1,14 +1,19 @@
-export interface Pizza {
+export type Category = 'pizza' | 'burger' | 'drink' | 'icecream' | 'fastfood';
+
+export interface Product {
   id: number;
   name: string;
   description: string;
   price: number;
   image: string;
-  ingredients: string[];
+  category: Category;
+  ingredients?: string[];
+  volume?: string; // для напитков
+  weight?: string; // для бургеров и фастфуда
 }
 
 export interface CartItem {
-  pizza: Pizza;
+  product: Product;
   quantity: number;
 }
 
